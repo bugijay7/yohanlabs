@@ -26,7 +26,7 @@ function Connect() {
     console.log('Submitting with Axios:', formData);
 
     try {
-      const response = await axios.post('http://localhost:3000/api/connect', formData);
+      const response = await axios.post('https://yohanlabs.onrender.com/api/connect', formData);
       console.log('Axios response:', response.data);
 
       setStatus('success');

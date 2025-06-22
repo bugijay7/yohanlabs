@@ -16,7 +16,7 @@ function AdminPage() {
       }
 
       try {
-        const res = await axios.get('http://localhost:3000/api/connect', {
+        const res = await axios.get('https://yohanlabs.onrender.com/api/connect', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -41,7 +41,7 @@ function AdminPage() {
     if (!window.confirm('Are you sure you want to delete this message?')) return;
 
     try {
-      await axios.delete(`http://localhost:3000/api/connect/${id}`, {
+      await axios.delete(`https://yohanlabs.onrender.com/api/connect/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },

@@ -33,7 +33,7 @@ function ContactsLink() {
     setStatus('loading');
 
     try {
-      await axios.post('http://localhost:3000/api/contact', formData);
+      await axios.post('https://yohanlabs.onrender.com/api/contact', formData);
       setStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (err) {
